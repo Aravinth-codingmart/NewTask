@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gyms Near Me | Locate Your Nearest Cult.fit fitness centre Today</title>
+	<link rel="shortcut icon" href="https://static.cure.fit/assets/images/curefit-v-man.svg">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<script type="text/javascript" src="js/cult.js"></script>
+</head>
+<body onload="store1()">
+	<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<ul id="ul1">
+		    <li class="ul4"><a class="navbar-brand btn btn-light" href="https://www.cure.fit/" ><img src="https://static.cure.fit/assets/images/curefit-v-man.svg"></a></li>
+		    <li class="nav-item dropdown ul4">
+	      		<a class="nav-link dropdown-toggle btn btn-light" href="#" id="navbardrop" data-toggle="dropdown">
+		        	<img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/image/header-web/cultfit.svg">
+	      		</a>
+		      	<div class="dropdown-menu">
+		      		<table>
+		      			<tr>
+		      				<td>
+		      					<a class="dropdown-item" href="https://www.cure.fit/cult"><img id="nav_img" src="https://static.cure.fit/assets/images/cult-hover-icon.svg"><br><small><strong>CULT</strong></small></a>
+		      				</td>
+		      				<td>
+		      					<a class="dropdown-item" href="https://www.cure.fit/mind"><img id="nav_img" src="https://static.cure.fit/assets/images/mind-icon.svg"><br><small><strong>MIND</strong></small></a>
+		      				</td>
+		      				<td>
+		      					<a class="dropdown-item" href="https://www.cure.fit/care"><img id="nav_img" src="https://static.cure.fit/assets/images/carefit-blk.svg"><br><small><strong>CARE</strong></small></a>
+		      				</td>
+		      			</tr>
+		      			<tr>
+		      				<td>
+		      					<a class="dropdown-item" href="https://www.cure.fit/live"><img id="nav_img" src="https://static.cure.fit/assets/images/Livefit.svg"><br><small><strong>LIVE</strong></small></a>
+		      				</td>
+		      			</tr>
+		      		</table>
+	      		</div>
+	      	</li>
+	      	<li><a class="btn btn-light" href="https://www.cure.fit/"><strong id="ul2">Live</strong></a></li>
+	      	<li id="ul3"><a href="#" class="btn btn-light"><img src="https://static.cure.fit/assets/images/cart-image.svg"></a></li>
+	       	<li id="ul3"><a href="#" class="btn btn-light"><strong><img src="https://static.cure.fit/assets/images/user-image.svg">&nbsp;Login</strong></a></li>
+	       	<li id="ul3"><a class="btn btn-light" href="#"><strong><span class="circle"></span>&nbsp;Coimbatore</strong></a></li>
+      	</ul>
+	</nav>
+	<br><br><br><br><br>
+	<div class="container">
+		<div class="row">
+			<h3>Live & Upcoming Classes</h3>
+			<div class="col-sm-12 col-lg-12">
+				<div id="inam" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+					<a href="#inam" class="carousel-control-prev" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a href="#inam" class="carousel-control-next" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<button onclick="toggleModal()" class="btn-primary">ADD CLASS</button>
+	<div class="modal --hidden">
+		<div class="modal__contents">
+			<div class="modal__close-bar" onclick="toggleModal()">
+				<span>X</span>
+			</div>
+			<p>Please Enter The Class Details To Add.</p>
+			<form>
+				<input type="text" placeholder="Class Name" id="ClassName"><br>
+				<input type="text" placeholder="Class Timing Ex:11:00AM 12:00PM 01:00PM MORE" id="ClassTime"><br>
+				<input type="text" placeholder="Coach Name" id="CoachName"><br>
+				<input type="text" placeholder="Class Complexity" id="ClassComplexity"><br>
+				<input type="text" placeholder="Paste the url of your Class Image" id="ClassImage">
+				<button onclick="store()">Submit</button>
+			</form>
+		</div>
+	</div>
+	<br><br><br>
+	<div class="jumbotron">
+		<div class="container">
+			<h4>Fitness Packs</h4>
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<div class="btn">
+						<div class="card">
+			                <div class="card-horizontal">
+			                    <div class="img-square-wrapper">
+			                        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_212,f_auto,ar_0.79,c_fit,q_auto:eco/dpr_0.75/image/diy/7efeed85-19dc-4a56-93e7-a5668ead0073.jpg">
+			                    </div>
+			                    <div class="card-body">
+			                        <h4 class="card-title">Belly Burn</h4><small>
+			                        <p class="card-text">These guided workouts include body weight exercises that will strengthen the midsection, burn belly fat and help improve your overall fitness.</p></small>
+			                        <div class="footer">6 Packs</div>
+			                    </div>
+			                </div>
+		            	</div>
+		            </div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="btn">
+						<div class="card">
+			                <div class="card-horizontal">
+			                    <div class="img-square-wrapper img-sqr">
+			                        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_212,f_auto,ar_0.79,c_fit,q_auto:eco/dpr_0.75/image/diy/62a65d26-056c-4fa1-a571-00d94dd52dee.jpg">
+			                    </div>
+			                    <div>
+			                    <div class="card-body">
+			                        <h4 class="card-title">Weight Loss</h4><small>
+			                        <p class="card-text">This Series focussed on high intensity workouts that will help you burn those calories and provide a lean look.The packs here are designed to the scalable.</p></small>
+			                        <div class="footer">5 Packs</div>
+			                    </div></div>
+			                </div>
+		            	</div>
+		            </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<div class="btn">
+						<div class="card">
+			                <div class="card-horizontal">
+			                    <div class="img-square-wrapper">
+			                        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_212,f_auto,ar_0.79,c_fit,q_auto:eco/dpr_0.75/image/diy/63ca2e5e-b1a0-4901-96a1-e39ba9661a0a.jpg">
+			                    </div>
+			                    <div class="card-body">
+			                        <h4 class="card-title">HRX</h4><small>
+			                        <p class="card-text">Created by Cult.Fit and Hrithil Roshan's HRX Team, these guided workouts include exercises that focus on specific muscle groups and will address your calorie burning goals.</p></small>
+			                        <div class="footer">1 Pack</div>
+			                    </div>
+			                </div>
+		            	</div>
+		            </div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="btn">
+						<div class="card">
+			                <div class="card-horizontal">
+			                    <div class="img-square-wrapper">
+			                        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_212,f_auto,ar_0.79,c_fit,q_auto:eco/dpr_0.800000011920929/image/diy/2dcfcd24-0c3b-44fa-b2f6-312f9e63d693.jpg">
+			                    </div>
+			                    <div class="card-body">
+			                        <h4 class="card-title">Get Lean</h4><small>
+			                        <p class="card-text">Thes workout videos include Cardio as well as strength Training exercises that will help enhance upper body and lower body strength.</p></small>
+			                        <div class="footer">6 Packs</div>
+			                    </div>
+			                </div>
+		            	</div>
+		            </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<div class="btn">
+						<div class="card">
+			                <div class="card-horizontal">
+			                    <div class="img-square-wrapper">
+			                        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_212,f_auto,ar_0.79,c_fit,q_auto:eco/dpr_0.800000011920929/image/diy/ca4bf881-0807-452e-bcc8-3a060756abe8.jpg">
+			                    </div>
+			                    <div class="card-body">
+			                        <h4 class="card-title">Beginners</h4><small>
+			                        <p class="card-text">Get started with fitness! These guided workouts aim at helping you start exercisiing daily with very simple and easy-to-do exercises.</p></small>
+			                        <div class="footer">4 Packs</div>
+			                    </div>
+			                </div>
+		            	</div>
+		            </div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="btn">
+						<div class="card">
+			                <div class="card-horizontal">
+			                    <div class="img-square-wrapper">
+			                        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_212,f_auto,ar_0.79,c_fit,q_auto:eco/dpr_0.800000011920929/image/diy/9942f630-422b-4760-86a2-d5d1db02437f.jpg">
+			                    </div>
+			                    <div class="card-body">
+			                        <h4 class="card-title">Get Strong</h4><small>
+			                        <p class="card-text">These guided workout video include bodyweight exercises that will strengthen the abdomen and midsection and enhance upper body and lower body strength.</p></small>
+			                        <div class="footer">3 Packs</div>
+			                    </div>
+			                </div>
+		            	</div>
+		            </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<div class="btn">
+						<div class="card">
+			                <div class="card-horizontal">
+			                    <div class="img-square-wrapper">
+			                        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_212,f_auto,ar_0.79,c_fit,q_auto:eco/dpr_0.800000011920929/image/diy/75bddd14-9d44-46e1-81eb-456e2b9154d2">
+			                    </div>
+			                    <div class="card-body">
+			                        <h4 class="card-title">Arms, Chest and Back</h4><small>
+			                        <p class="card-text">Arms, chest and back muscles play a crucial role in everyday life. these workouts will help you build strong chest and back muscles along with toned arms and shoulders.</p></small>
+			                        <div class="footer">3 Packs</div>
+			                    </div>
+			                </div>
+		            	</div>
+		            </div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="btn">
+						<div class="card">
+			                <div class="card-horizontal">
+			                    <div class="img-square-wrapper">
+			                        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_212,f_auto,ar_0.79,c_fit,q_auto:eco/dpr_0.800000011920929/image/diy/04f1a412-f616-478d-8940-5ced32e1dd40">
+			                    </div>
+			                    <div class="card-body">
+			                        <h4 class="card-title">Abs, Butt and Thigh</h4><small>
+			                        <p class="card-text">These workouts will help strengthen the Abs, Butt and Thigh and Enhance Cadiovascular Endurance, along with working out all the other major muscle groups and parts of the body.</p></small>
+			                        <div class="footer">3 Packs</div>
+			                    </div>
+			                </div>
+		            	</div>
+		            </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<div class="btn">
+						<div class="card">
+			                <div class="card-horizontal">
+			                    <div class="img-square-wrapper">
+			                        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_212,f_auto,ar_0.79,c_fit,q_auto:eco/dpr_0.800000011920929/image/diy/1f5ccff8-a885-498b-b956-f1f9c49a4dc4.jpg">
+			                    </div>
+			                    <div class="card-body">
+			                        <h4 class="card-title">Mobility</h4><small>
+			                        <p class="card-text">These mobility workouts will help increase your body's range of motion and bring down overall stiffness of the body.</p></small>
+			                        <div class="footer">6 Packs</div>
+			                    </div>
+			                </div>
+		            	</div>
+		            </div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="btn">
+						<div class="card">
+			                <div class="card-horizontal">
+			                    <div class="img-square-wrapper">
+			                        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_212,f_auto,ar_0.79,c_fit,q_auto:eco/dpr_0.800000011920929/image/diy/5326ae61-d2c2-4383-95fe-e2dd65b4ebe7">
+			                    </div>
+			                    <div class="card-body">
+			                        <h4 class="card-title">Strengthen and Conditioning</h4><small>
+			                        <p class="card-text">These workouts includes body weight movements that will help build strength and stamina and increases endurance.</p></small>
+			                        <div class="footer">3 Packs</div>
+			                    </div>
+			                </div>
+		            	</div>
+		            </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<div class="btn">
+						<div class="card">
+			                <div class="card-horizontal">
+			                    <div class="img-square-wrapper">
+			                        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_212,f_auto,ar_0.79,c_fit,q_auto:eco/dpr_0.800000011920929/image/diy/fb02a0c2-8148-4231-9c69-87d514c4e344.jpg">
+			                    </div>
+			                    <div class="card-body">
+			                        <h4 class="card-title">Yoga - Strength</h4><small>
+			                        <p class="card-text">This hatha yoga series will focus on enhancing physical strength required for everyday activities.</p></small>
+			                        <div class="footer">4 Packs</div>
+			                    </div>
+			                </div>
+		            	</div>
+		            </div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid"></div>
+			<br><br><br><br>
+			<div class="row">
+				<div class="col-12">
+					<h4>Why Cult At Home</h4>
+					<p>Four reasons you should try our At Home workouts</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-3">
+					<p>#1</p>
+					<h5>Enjoy LIVE classes from anywhere</h5>
+					<h6>Join LIVE classes led by star trainers from your home</h6>
+				</div>
+				<div class="col-3">
+					<p>#2</p>
+					<h5>Workout anytime, anywhere</h5>
+					<h6>Workout from wherever you are at a time suitable to you</h6>
+				</div>
+				<div class="col-3">
+					<p>#3</p>
+					<h5>Goal-based workouts</h5>
+					<h6>Variety of workouts to help you achieve your goals</h6>
+				</div>
+				<div class="col-3">
+					<p>#4</p>
+					<h5>Workouts led by real athelets</h5>
+					<h6>Get trained by master trainers and learn skills for life</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<b>
+			<p class="class1">BE SPIRITED</p>
+			<p class="class2">FEARLESS</p>
+			<p class="class3">AN EVERYDAY ATHELETE</p>
+		</b>
+	</div>
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col-6 class4">
+				<small>
+					<p>
+						<b>Start your fitness journey at Cult.fit</b><br>
+						If you’re looking for a gym near you that offers more than just traditional machines to exercise with, choose to workout at Cult.fit. A fitness studio that gives you an opportunity to learn new fitness formats and reach your fitness goals, all while having fun. Each workout session defines a perfect structure, which involves a warmup, a balanced full body workout and a cool down, to ensure you get fit the right way.
+					</p>
+				</small>
+			</div>
+			<div class="col-6 class4">
+				<small>
+					<p>
+						<b>Train anywhere</b><br>
+						At Cult.fit, our fitness packs gives you the freedom to work out at any of our centers across the city. All you have to do is fire up the cure.fit app, choose a fitness center near you and book your favourite class.
+				</p>
+			</small>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 class4">
+				<small>
+					<p>
+						<b>Looking for motivation? We’ve got tons of it.</b><br>
+						At Cult, the group workout formats are a great source of motivation.It helps you build camaraderie between you and the other participants while also breaking the workout plateaus. And that’s not all, training in a group can ensure a higher endorphin output and even improve performance
+					</p>
+				</small>
+			</div>
+			<div class="col-6 class4">
+				<small>
+					<p>
+						<b>World class trainers</b><br>
+						When you choose Cult.fit, you can be sure you’ll get to train with certified, world class trainers that have the knowledge, skills and willingness to help you be your best self. Whether your fitness goal is weight-loss or just physical fitness, you can count on our trainers to be dedicated to helping you achieve it.
+				</p>
+			</small>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 class4">
+				<small>
+					<p>
+						<b>Dance your way to fitness</b><br>
+						If you want to get in shape but lifting weights or running on a treadmill doesn’t excite you, try Zumba or Dance fitness at Cult. it is a fun way to help you burn calories while you have fun. And if you don’t want your training session to be all dance, you’ll love our Prowl classes, a combination of dance, combat and functional fitness done to foot-tapping music designed to give you a full-body workout.
+					</p>
+				</small>
+			</div>
+			<div class="col-6 class4">
+				<small>
+					<p>
+						<b>The playground</b><br>
+						Come train in our top-class spacious centers built to perfection with industrial interiors that’ll make working out an experience you’re going to love for a long, long time.
+				</p>
+			</small>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 class4">
+				<small>
+					<p>
+						<b>Improve strength and agility with functional training</b><br>
+						Fill your day with energy and perform at your peak with functional training at Cult. With group classes like Strength and Conditioning and HRX, you will improve your overall body flexibility, core strength and stamina and you’ll find that reaching your fitness goal will be easier than ever.
+					</p>
+				</small>
+			</div>
+			<div class="col-6 class4">
+				<small>
+					<p>
+						<b>Get fit at home</b><br>
+						We live in a busy world and you may not always find the time to visit a gym near you. We understand! Which is why our Do-it-Yourself workout videos are the perfect way to get fit at home. Our videos are designed with different intensity levels so you can always pick the pack that best addresses your fitness goals. And the best part? It’s completely FREE to use.
+				</p>
+			</small>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 class4">
+				<small>
+					<p>
+						<b>Train like an athlete</b><br>
+						If the world is your playground, then we’ve got some indoor & outdoor sports to help you stay fit. Whether you’re looking to develop a new skill or improve your technique, with Football, Boxing and Sports Conditioning, Cult.fit gives you that opportunity. Learn the skills and master it with our trainers at Cult.
+					</p>
+				</small>
+			</div>
+			<div class="col-6 class4">
+				<small>
+					<p>
+						Begin your journey to weight loss or fitness at Cult.fit, unlike your traditional gym workout, your experience at Cult.fit will be one that includes effective exercises and training sessions. And that’s not all, you can even get some health tips and nutritional advice from the experienced doctors at our care.fit center.
+				</p>
+			</small>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid class5">
+		<div class="container">
+			<br><br><br>
+			<div class="row">
+				<div class="col-6">
+					<img src="https://static.cure.fit/assets/images/cf-logo.svg"><br><br>
+					<p class="class6">At cure.fit, we make group workouts fun, daily food healthy & tasty, mental fitness easy with yoga & meditation, and medical & lifestyle care hassle-free. #BeBetterEveryDay</p>
+				</div>
+				<div class="col-3">
+					<a href="hello@curefit.com" class="class7 btn">CONTACT US</a><br>
+					<a href="https://medium.com/cure-fit" class="class7 btn">BLOG</a><br>
+					<a href="https://www.cure.fit/careers" class="class7 btn">CAREERS</a><br>
+					<a href="https://www.cure.fit/franchise" class="class7 btn">CULT FRANCHISE</a><br>	
+				</div>
+				<div class="col-3">
+					<a href="https://apps.apple.com/us/app/cure-fit/id1217794588">
+						<img src="https://static.cure.fit/assets/images/app-store.svg">
+					</a><br><br><br>
+					<a href="https://play.google.com/store/apps/details?id=fit.cure.android/">
+						<img src="https://static.cure.fit/assets/images/play-store.svg">
+					</a>
+				</div>
+			</div>
+			<br><br><br><br><br>
+			<div class="row">
+				<div class="col-9">
+					<small>
+						<a href="https://www.cure.fit/contactUs" class="class8">Contact us</a>
+						<a href="http://support.cure.fit/" class="class8">FAQ</a>
+						<a href="https://static.cure.fit/terms.html" class="class8">Terms&Conditions</a>
+						<a href="https://static.cure.fit/privacy.html" class="class8">Privacy Policy</a>
+						<a href="https://static.cure.fit/terms.html#5" class="class8">Refund Policy</a>
+					</small>
+				</div>
+				<div class="col-3">
+					<a href="https://www.youtube.com/channel/UCSE72IaHOL-1Tv-m3JHE4Cg">
+						<img id="ul3" class="class8" src="https://static.cure.fit/assets/images/youtube_icon_white_1.svg">
+					</a>
+					<a href="https://www.instagram.com/becurefit">
+						<img id="ul3" class="class8" src="https://static.cure.fit/assets/images/instagram_icon_white.svg">
+					</a>
+					<a href="https://twitter.com/becurefit">
+						<img id="ul3" class="class8" src="https://static.cure.fit/assets/images/twitter_icon_white.svg">
+					</a>
+					<a href="https://www.facebook.com/BeCureFit/">
+						<img id="ul3" class="class8" src="https://static.cure.fit/assets/images/facebook_icon_white.svg">
+					</a>					
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

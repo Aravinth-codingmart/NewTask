@@ -1,0 +1,44 @@
+@media(max-width: 1000px){
+	.card-body{
+		display: none;
+	}
+}
+@media(max-width: 750px){
+	.checkbtn{
+		display: block;
+	}
+	#ul1{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: white;
+		top: 80px;
+		left: -100%;
+		transition: all 0.5s;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+	nav ul li{
+		display: block;
+		padding-top: 30px;
+		padding-bottom: 20px;
+		color: black;
+	}
+	.btn-light{
+		background: white;
+		border: none;
+	}
+	#ul3{
+		float: none;
+	}
+	#ul3{
+		float: none;
+	}
+	#ul4{
+		float: none;
+	}
+	.ul4{
+		float: none;
+	}
+}

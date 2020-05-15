@@ -1,0 +1,198 @@
+nav{
+	height: 70px;
+}
+li{
+	display: inline-block;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#ul1{
+	list-style-type: none;
+	width: 100%;
+	text-align: center;
+}
+.checkbtn{
+	font-size: 30px;
+	line-height: 100px;
+	margin-left: 30px;
+	cursor: pointer;
+	display: none;
+}
+.menuimg{
+	height: 20px;
+	width: 10px;
+}
+#check{
+	display:none;
+}
+div.img-square-wrapper img{
+	height:200px;
+	width:170px;
+}
+a{
+	color: black;
+}
+#ul3{
+	float: right;
+}
+#ul2{
+	color: #ff0066;	
+}
+.ul4{
+	float:left;
+}
+div.row h3{
+	padding-left: 30px;
+	padding-bottom: 20px;
+}
+div.container{
+	width: 100%;
+}
+div.container h4{
+	padding-bottom: 20px;
+}
+.card-horizontal {
+   display: flex;
+   flex: 1 1 auto;
+}
+div.card-body h4{
+	padding: 0px;
+}
+caption{
+	align: left;
+}
+div.card-body p{
+	text-align: left;	
+} 
+.btn-dark{
+	padding: 9px;
+}
+.card-block{
+	padding: 5px;
+}
+div.card-block img{
+	border-radius: 5px;
+}
+div.col-12 p{
+	opacity: 0.5;
+}
+div.col-3 p{
+	opacity: 0.4;
+	font-size: 50px;
+}
+div.col-3 h5{
+	opacity: 0.8;
+}
+div.col-3 h6{
+	opacity: 0.6;
+}
+.class1{
+	font-size: 80px;
+	opacity: 0.8;
+}
+.class2{
+	font-size: 60px;
+	opacity: 0.6;
+}
+.class3{
+	font-size: 40px;
+	opacity: 0.4;
+}
+.class5{
+	background-color: black;
+}
+.class6{
+	color: grey;
+}
+.class7{
+	color: white;
+	size: 30px;
+	text-align: right;
+}
+.class8{
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.footer {
+	position: absolute;
+	left: 10;
+	bottom: 0;
+	padding: 10px;
+	opacity: 0.7;
+}
+.dot {
+  	height: 6px;
+  	width: 6px;
+  	background-color: #ff0066;
+  	border-radius: 50%;
+  	position: relative;
+  	bottom: 4px;
+  	display: inline-block;
+ }
+ .circle{
+ 	height: 8px;
+	width: 8px;
+ 	background-color: #3399ff;
+  	border-radius: 50%;
+  	position: relative;
+  	bottom: 2px;
+  	display: inline-block;	
+ }
+ div.card-block a{
+ 	background-color: #e0e0d1;
+ 	color: black;
+ 	padding: 8px;
+ }
+.fixedwidth{
+	height: 217px;
+	width: 513px;
+}
+button.btn-primary{
+	display: flex;
+	position: absolute;
+	padding: 5px;
+	left: 78%;
+}
+.modal{
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.modal__contents{
+	background-color: #fff;
+	padding: 2rem 4rem;
+}
+input{
+	width: 100%;
+	padding : 8px;
+	border-spacing: 10px;
+}
+div form button{
+	width: 100%;
+	padding: 8px;
+	background-color: blue;
+	border : none;
+	color: white;
+	transition: all .3s ease;
+	cursor: pointer;
+}
+div form button:hover{
+	background-color: darkblue;
+}
+.modal__close-bar{
+	margin-right: -2rem;
+	margin-top: -1rem;
+	cursor: pointer;
+	width: 10px;
+	float: right;
+}
+.--hidden{
+	display: none;
+}
